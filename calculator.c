@@ -79,20 +79,20 @@ int main() {
          if (currency == '1') {
             printf("Enter the PHP value: ");
                scanf("%f", &php_value);
-            printf("%.1lf is %.1lf in US Dollar", php_value, php_value * us_value);
+            printf("%.1lf is %.1lf in US Dollar", php_value, php_value * us_dollar);
          } else if (currency == '2') {
             printf("Enter the PHP value: ");
             scanf("%f", &php_value);
-            printf("%.1lf is %.1lf in Japanese Yen", php_value, php_value * jpy_value);
+            printf("%.1lf is %.1lf in Japanese Yen", php_value, php_value * japan_yen);
          } else if (currency == '3') {
             printf("Enter the PHP value: ");
             scanf("%f", &php_value);
-            printf("%.1lf is %.1lf in Korean Won", php_value, php_value * won_value);
+            printf("%.1lf is %.1lf in Korean Won", php_value, php_value * korean_won);
          } else if (currency == '4')
          {
             printf("Enter the PHP value: ");
             scanf("%f", &php_value);
-            printf("%.1lf is %.1lf in Pound Sterling", php_value, php_value * gbp_value);
+            printf("%.1lf is %.1lf in Pound Sterling", php_value, php_value * gbp);
   
          } else {
             printf("error: invalid currency");
@@ -107,22 +107,22 @@ int main() {
             //USD TO PHP
             printf("Enter the USD value: ");
             scanf("%f", & currency_value);
-            printf("%.1lf is %.1lf in Philippine Peso", currency_value, currency_value * us_dollar);
+            printf("%.2lf is %.1lf in Philippine Peso", currency_value, currency_value * us_value);
          } else if (currency == '2') {
             //JPY to PHP
             printf("Enter the JPY value: ");
             scanf("%f", & currency_value);
-            printf("%.1lf is %.1lf in Philippine Peso", currency_value, currency_value * japan_yen);
+            printf("%.2lf is %.1lf in Philippine Peso", currency_value, currency_value * jpy_value);
          } else if (currency == '3') {
             //Korean Won to PHP
             printf("Enter the Koren Won value: ");
             scanf("%f", & currency_value);
-            printf("%.1lf is %.1lf in Philippine Peso", currency_value, currency_value * korean_won);
+            printf("%.2lf is %.1lf in Philippine Peso", currency_value, currency_value * won_value);
          } else if (currency == '4') {
             //GBP to PHP
             printf("Enter the Pound Sterling value: ");
             scanf("%f", & currency_value);
-            printf("%.1lf is %.1lf in Philippine Peso", currency_value, currency_value * gbp);
+            printf("%.2lf is %.1lf in Philippine Peso", currency_value, currency_value * gbp_value);
          } else {
             printf("error: invalid currency");
          }
@@ -139,5 +139,5 @@ int main() {
       printf("error: invalid choice");
       break;
    }
-
+   return 0;
 }
